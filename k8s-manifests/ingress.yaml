@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  tls:
+  - hosts:
+    - hello-world.local
+    secretName: hello-world-tls-secret
+  rules:
+  - host: localhost
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: nginx
+            port:
+              number: 80
+
