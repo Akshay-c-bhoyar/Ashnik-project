@@ -14,8 +14,8 @@ This project deploys a "Hello World" application on Kubernetes using Ansible. It
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/hello-world-k8s.git
-   cd hello-world-k8s
+   git clone https://github.com/Akshay-c-bhoyar/Ashnik-project.git
+   cd Ashnik-project
    ```
 
 2. **Run Ansible Playbook:**
