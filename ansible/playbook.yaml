@@ -1,0 +1,7 @@
+---
+- name: Deploy hello world Kubernetes Resources
+  hosts: localhost
+  gather_facts: false
+  roles:
+    - common
+
